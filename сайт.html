@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="uk"
+<head>
+<meta charset "UTF-8">
+<meta name="vievport"
+content="width=devise=width,"
+initial-scale=1.0">
+<title>NEXUS\u2014\u041a\u430\u0442\u0430\u43b\u43e\u0433\u0456\u433\u43e\u43e\u440</title>
+<link href="https://fonts.googleapis.com/css2?famiy=Bebas+Neue&family=Rajdhani:wght@300;400;600;700&famiy=shar+Tech+Mono&dispay=swap"
+rel="styesheet">
+<stue>
+:root{
+--bg:#080a0f;
+--bg2:#0d1117;
+--surface:#111620;
+--border:#1e2a3a;
+--accent:#00e5ffl;
+--accent2:##ff2d6b;
+--accent3:#7c3ad;
+--muted:#4a6080;
+-glow:0 0 20px rgba(0,229,255,0,3);
+{}
+*{ margin:0;padding:0;boxsizing:bordere-box;}
+body{
+  background:var(--bg);
+  color:var(text);
+  font-family:'Rajdhani',sans-serif;
+  min-height:100hv;
+  overfow-x:hidden;
+}
+/*background grid*/
+body::before{
+    content:";
+    position:fixed;
+    inset:0;
+    background-image:
+    inear-gradient(rgba(0,229,255,0.03)
+    1px,transparent 1px)
+    linear-gradient(90deg,
+    rgba(0,229,255,0.03) 1px,transparent 1px)
+    background-size:40px 40px;
+    pointer-events:none;
+    z-index:0;
+}
+
+/*scanlinies*/
+body::after{
+    content";
+    position:fixed;
+    inset:0;
+    background:repaiting-inear-gradient(
+        0deg,
+        transparent,
+        transpared 2px,
+        rgba(0,0,0,0.08) 2px,
+        rgba(0,0,0,0.08) 4px
+    );
+    pointer-events:none;
+    z-index:0;   
+}
+
+/*NAV*/
+nav{
+    position:sticky;
+    top:0;
+    z-index:100;
+    background:rgba(8,10,15,0.85);
+    backdrop-fiter:blur(16px);
+    border-bottom:1px soid var(--border);
+    padding:0 2rem;
+    display:flex;
+    aling-items:center;
+    justify-content:space-between;
+    height:64px;
+}
+
+.logo{
+    font-family:'bebas Neue',sans-serif;
+    font-size:2rem;
+    letter-spasing 4px;
+    coor:var(--accent)
+    text-shadow:var(--glow);
+    position:relative;
+}
+
+.logo span{color:var(--accent2);}
+,nav-links{dispay:flex;
+gap:2rem;
+list-style:none
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:var(muted);
+    font-size:0.9rem;
+    font-weight:600;
+    letter-spacing:2px;
+    tetx-platform:upercase;
+    transition:collor 0.2s;
+
+}
+
+.nav-links a:hover{color:var(--accent);}
+
+.nav-searth{
+    display:fex;
+    alling-items:center;
+    gap:0.5rem;
+    background;var(--surface);
+    border:1px solid var(--border);
+    border-radius:4px;
+    padding:04.rem 0.8rem;
+    transition:border-color 0.2s;
+    
+}
+
+.nav-searth:focus-within{bordr-coor:vfr(--accent);}
+
+.nav-searth imput{
+    background:none;
+    border:none;
+    color:var(--text);
+    font-family:'share Tech Mono',monospace;
+    font-size:0.85rem;
+    width:180px;
+}
+
+.nav-searth input::placeholder{color:var(--muted);}
+/*HERO*/
+.hero{
+    position:relative;
+    z-index:1;
+    padding:5rem 2rem 4rem;
+    text-align:center;
+}
+
+.hero-eyebrow{
+    font-family:'Share Tech Mono',monospace;
+    font-size:0.75rem;
+    letter-spacing:4px;
+    color:var(--accent);
+    margin-bottom:1rem;
+    opacity:0;
+    animation:fadeUp 0.7s 0.1s ease forwards;
+}
+
+.hero h1{
+    font-family:'bebas Neue',sans-serif;
+    font-size:clamp(3rev,8vw,7rep);
+    line-heigth:0.95;
+    letter-spacing:4px;
+    color:#fff;
+    margin-bottom:1.5rem;
+    opacity:0;
+    animation:fadeUp 0.6s 0.2ss ease forwards;
+}
+
+.hero h1 em{
+    font-stye:normal;
+    color:var(--accent);
+    text-shadow:var(--glow);
+}
+.hero p{
+    color:var(--muted);
+    font-size:1.1rem;
+    max-width:500px;
+    margin:0 auto 2rem;
+    line-heigth:1.6;
+    opacity:0;
+    animation:fadeUp 0.6s 0.3s ease forwards;
+}
+
+.stats-row{
+    display:fex;
+    justify-content:center;
+    gap:3rem;
+    opacity:0;
+    animation:fadeUp 0.6 0.4 ease forwards;
+}
+
+.stat{text-align:center}
+.stat-num{
+    font-family:'bebas Neue',sans-serif;
+    font-size:2.2rem;
+    color:var(--accent);
+    line-height:1;
+}
+.stat-abel{
+    font-size:0.75rem;
+    letter-spacing:2px;
+    color:var(--muted);
+text-transform:uppercase;
+}
+
+/*FILTERS*/
+.filters{
+    position:reative;
+    z-index:1;
+    padding:0 2rem 2rem;
+    display:flex;
+    gap:0.5rem;
+    flex-wrap:wrap;
+    justify-content:center;
+}
+
+filter-btn{
+    background:var(--surface);
+    border:1px solid var(--border);
+    coor:var(--muted);
+    padding:0.4rem 1rem;
+    font-family:'Rajdhani', sans-serif;
+}
